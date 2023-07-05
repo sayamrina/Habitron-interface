@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Page Title -->
+      <title>Habitron</title>
+      <!-- Favicon -->
+      <link rel="icon" href="favicon.ico" />
+      <!---IcoFont Icon font-->
+      <link rel="stylesheet" href="css/icofont.min.css">
+      <!-- Bootsrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- CSS Alarm Style -->
+      <link rel="stylesheet" href="alarm-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/337/alarm-clock_23f0.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+      <!-- Animate CSS -->
+      <link href="css/animate.min.css" rel="stylesheet">
+      <!-- Magnific Popup core CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <!-- Magnific Popup core CSS -->
+      <link rel="stylesheet" href="css/modal-video.min.css">
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <!-- Theme Style -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Global margin paddings CSS -->
+      <link rel="stylesheet" href="css/margin-paddings.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/colors/green.css">
+  
+
+   </head>
+   <body data-spy="scroll" data-target="#navbarCodeply" data-offset="70">
+      <div id="preloader-wrap">
+          <div class="preloader"></div>
+      </div>
+      
+      <!-- ========== Header Nav Start ========== -->
+      <header>
+         <nav class="navbar navbar-inverse navbar-expand-lg header-nav fixed-top light-header">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  Habitron
+                  <!-- <img src="http://www.placehold.it/150x50" alt=""> -->
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCodeply">
+                  <i class="icofont-navigation-menu"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarCodeply">
+                <ul class="nav navbar-nav ml-auto">
+                  <li>
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+               </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- ========== Header Nav End ========== -->
+      <!-- ========== Page Header Start ========== -->
+
+      <!-- ========== Page Header End ========== -->
+
+      <section id="blog-detail" class="p-80px-tb white-bg">
+        <div class="container">
+          <div class="row">
+              <!-- Start single post -->
+              <div class="main-container">
+
+                <!-- clock section -->
+                <div class="clock-container">
+                    <div class="clock">
+                        <span class="hour">00</span>
+                        <span class="colon">:</span>
+                        <span class="minute">00</span>
+                        <span class="colon">:</span>
+                        <div class="side">
+                            <span class="second">00</span>
+                            <span class="am-pm">--</span>
+                        </div>
+                    </div>
+                    <div class="days">
+                        <span class="month">---</span>
+                        <span class="day">---</span>
+                        <span class="date">00</span>
+                    </div>
+                    <div class="add-alarm">
+                       <img src="https://cdn-icons-png.flaticon.com/512/3524/3524388.png" alt="add-alarm" class="add-img"> 
+
+                        <div><span class="display-add-alarm">Add Alarm</span></div>
+                    </div>
+        
+                    <!-- set alarm section -->
+                    <div class="set-alarm">
+                        <p class="set-alarm-heading">Set Alarm</p>
+                        <div class="alarm-input">
+                            <div>
+                                <input type="number" class="set-hour" id="set-hour" required="required" placeholder="Hour">
+                                <input type="number" class="set-minute" id="set-minute" required="required"
+                                    placeholder="Minute">
+                                <input type="number" class="set-sec" id="set-sec" required="required" placeholder="Second">
+                            </div>
+                            <div class="set-am-pm" id="set-am-pm">
+                                <div class="set-am set-am-active" id="set-am">AM</div>
+                                <div>-</div>
+                                <div class="set-pm" id="set-pm">PM</div>
+                            </div>
+                        </div>
+                        <div class="alarm-buttons">
+                            <button class="set-alarm-button">Set Alarm</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- time toggle section -->
+                <div class="local-time-toggle">
+                    <button class="local-time-toggle-button"><span class="display-hr">- - - -</span><span class="button-span"><i
+                                class="fa-regular fa-clock"></i></button>
+                </div>
+        
+                <!-- alarm list section -->
+                <div class="alarm-list-section" id="alarm-list">
+                    <ul class="alarm-list">
+                        <!-- <li>
+        
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- other stuff section-->
+        
+            <!-- theme toggle section -->
+            <div class="theme-toggle">
+                <span class="display-theme">You are in Dark mode</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/581/581601.png" alt="" class="theme-image">
+            </div>
+        
+            <!-- alert section -->
+            <div class="show-notification">
+                <div class="warning">
+                    <div class="show-notification-warning-img"><i class="fa-solid fa-check"></i></div>
+                    <div class="show-notification-msg" id="notification-msg"></div>
+                </div>
+            </div>
+        
+            <div class="show-warning">
+                <div class="warning">
+                    <div class="show-warning-img"><i class="fa-solid fa-exclamation"></i></div>
+                    <div class="show-warning-msg" id="warning-msg"></div>
+                </div>
+            </div>
+        
+            <div id="alarm-ringing">
+                <svg viewBox="0 30 500 500" width="200" height="200">
+                    <g id="svg" transform="matrix(1, 0, 0, 1, 47, 230)">
+                        <circle cx="200" cy="155" r="75" />
+                        <circle cx="200" cy="155" r="60" />
+                        <circle cx="200" cy="155" r="45" />
+                        <circle cx="200" cy="155" r="30" />
+                        <circle cx="200" cy="155" r="20" />
+                        <text x="200" y="155" text-anchor="middle" dy=".3em">Stop</text>
+                    </g>
+                </svg>
+                <div id="snooze">
+                    <div class='wave'></div>
+                    <div class='wave delay1'></div>
+                    <div class='wave delay2'></div>
+                </div>
+                <div class="snooze-text">Snooze</div>
+            </div>
+          
+              <!-- End single post -->
+
+            <!-- Start sidebar -->
+              <!-- End sidebar -->
+          </div>
+        </div>
+      </section>
+
+      <!-- jQuery -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery-migrate-3.0.0.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Animated text -->
+      <script src="js/jquery.textillate.js"></script>
+      <script src="js/jquery.lettering.js"></script>
+      <script src="js/jquery.fittext.js"></script>
+      <!-- Magnific Popup core JS -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Modal video Popup core JS -->
+      <script src="js/modal-video.min.js"></script>
+      <!-- Waypoints JS -->
+      <script src="js/waypoints.min.js"></script>
+      <!-- CounterUp JS -->
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Isotop JS -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- AjaxChimp js -->
+      <script src="js/jquery.ajaxchimp.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="js/swiper.min.js"></script>
+      <!-- Custom -->
+      <script src="js/custom.js"></script>
+            <!--Js Code-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.min.js"></script>
+            <script src="script.js"></script>
+   </body>
+</html>
